@@ -2,7 +2,7 @@ package com.sroba.vehiclefactory.impl;
 
 import com.sroba.vehiclefactory.IVehicleFactory;
 
-public class FactoryParticularCar implements IVehicleFactory{
+public class ParticularCarFactory implements IVehicleFactory{
 	
 	private String licensePlate ;
 	private String vehicleType;
@@ -12,7 +12,7 @@ public class FactoryParticularCar implements IVehicleFactory{
 	private String color;
 	
 	
-	public FactoryParticularCar(String licensePlate, String mark, int model, int cylinder, String color) {
+	public ParticularCarFactory(String licensePlate, String mark, int model, int cylinder, String color) {
 		this.licensePlate = licensePlate;
 		this.vehicleType = "ParticularCar";
 		this.mark = mark;
@@ -30,8 +30,7 @@ public class FactoryParticularCar implements IVehicleFactory{
 
 	@Override
 	public String toString() {
-		return "factoryCar [licensePlate= " + licensePlate + ", vehicleType= " + vehicleType + ", mark= " + mark
-				+ ", model= " + model + ", cylinder= " + cylinder + ", color= " + color + "]";
+		return "License Plate= " + licensePlate + ", vehicle Type= " + vehicleType + ", mark= " + mark
+				+ ", model= " + model + ", cylinder= " + cylinder + ", color= " + color;
 	}
-
 }
